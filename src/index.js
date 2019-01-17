@@ -13,15 +13,15 @@ import burgerBuilderReducer from './store/reducers/burgerBuilder';
 const composeEnchancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
 const store = createStore(burgerBuilderReducer, composeEnchancers(
-  applyMiddleware(thunk)
+    applyMiddleware(thunk)
 ));
 
 const app = (
-<Provider store={store}>
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-</Provider>
+    <Provider store={store}>
+        <BrowserRouter>
+            <App />
+        </BrowserRouter>
+    </Provider>
 );
 
 
