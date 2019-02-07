@@ -25,6 +25,7 @@ class Checkout extends Component {
             summary = (
                 <div>
                     {purchasedRedirect}
+                    
                     <CheckoutSummary 
                         ingredients={this.props.ings}
                         checkoutCancelled={this.checkoutCancelledHandler}
@@ -32,6 +33,7 @@ class Checkout extends Component {
                     <Route 
                         path={this.props.match.path + '/contact-data'} 
                         component={ContactData} />
+                
                 </div>
             );
         }
